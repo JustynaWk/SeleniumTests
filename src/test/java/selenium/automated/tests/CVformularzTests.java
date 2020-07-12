@@ -10,6 +10,7 @@ package selenium.automated.tests;
 
 import org.junit.Before;
 import org.junit.Test;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -63,18 +64,16 @@ public class CVformularzTests {
         WebElement adres = driver.findElement(By.xpath("//*[@id=\"app\"]/div/div[1]/div[2]/div[1]/div[2]/div/div[1]/div/div/div[3]/div[3]/div/div[1]/textarea"));
         adres.sendKeys("Urocza Gdynia\nDzielnica ze sporą ilością zieleni\nChata wypasiona nr 1");
 
-        WebElement foto = driver.findElement(By.xpath("//*[@id=\"app\"]/div/div[1]/div[2]/div[1]/div[2]/div/div[1]/div/div/div[2]/div[1]/div/div[1]"));
-        foto.sendKeys("C:\\Users\\Owca\\Pictures\\FigaTheCat.jpg");
-
-        WebElement Dalej = driver.findElement(By.xpath("//*[@id=\"app\"]/div/div[1]/div[2]/div[1]/div[2]/div/div[1]/div/div/div[4]/div/button/div/span"));
+        WebElement Dalej = driver.findElement(By.xpath("//*[@id=\"app\"]/div/div[1]/div[2]/div[1]/div[2]/div/div[1]/div/div/div[4]/div/button/div"));
         Dalej.click();
 
-        WebElement Pomin = driver.findElement(By.xpath("/html/body/div[1]/div/div[2]/div/div/div[1]/button/div/span"));
-        Pomin.click();
+        //wyskakujacy pop-up
+
+        WebElement alert = driver.findElement(By.xpath("/html/body/div[1]/div/div[2]/div/div/div[1]/button/div/span"));
+        alert.click();
 
 
         //strona druga formularza
-
 
         WebElement nazwaFirmy = driver.findElement(By.xpath("//*[@id=\"app\"]/div/div[1]/div[2]/div[1]/div[2]/div/div[1]/div/div/div[1]/div[1]/div[1]/div[1]/input"));
         nazwaFirmy.sendKeys("Mieszkanie Człowieków");
@@ -91,6 +90,15 @@ public class CVformularzTests {
         Select miesiacRozpoczecia = new Select(driver.findElement(By.name("month")));
         miesiacRozpoczecia.selectByVisibleText("Marzec");
 
+        //WebElement opisStanowiska = driver.findElement(By.className("tox-tbtn__select-label"));
+        //opisStanowiska.click();
+
+        //WebElement czynnosciStanowisko = driver.findElement(By.xpath("//*[@id=\"app\"]/div/div[1]/div[2]/div[2]/div/div[1]/div/div/div[2]/div[2]/div[1]/p"));
+        //czynnosciStanowisko.click();
+        //WebElement czynnosciStanowisko2 = driver.findElement(By.xpath("//*[@id=\"app\"]/div/div[1]/div[2]/div[2]/div/div[1]/div/div/div[2]/div[2]/div[3]/p"));
+        //czynnosciStanowisko2.click();
+        //WebElement czynnosciStanowisko3 = driver.findElement(By.xpath("//*[@id=\"app\"]/div/div[1]/div[2]/div[2]/div/div[1]/div/div/div[2]/div[2]/div[4]/p"));
+        //czynnosciStanowisko3.click();
 
 
 
