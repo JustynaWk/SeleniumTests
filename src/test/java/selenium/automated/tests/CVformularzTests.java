@@ -72,7 +72,24 @@ public class CVformularzTests {
         WebElement Pomin = driver.findElement(By.xpath("/html/body/div[1]/div/div[2]/div/div/div[1]/button/div/span"));
         Pomin.click();
 
+
         //strona druga formularza
+
+
+        WebElement nazwaFirmy = driver.findElement(By.xpath("//*[@id=\"app\"]/div/div[1]/div[2]/div[1]/div[2]/div/div[1]/div/div/div[1]/div[1]/div[1]/div[1]/input"));
+        nazwaFirmy.sendKeys("Mieszkanie Człowieków");
+
+        WebElement miasto = driver.findElement(By.xpath("//*[@id=\"app\"]/div/div[1]/div[2]/div[1]/div[2]/div/div[1]/div/div/div[1]/div[1]/div[2]/div[1]/input"));
+        miasto.sendKeys("Gdynia");
+
+        WebElement Stanowisko = driver.findElement(By.xpath("//*[@id=\"app\"]/div/div[1]/div[2]/div[1]/div[2]/div/div[1]/div/div/div[1]/div[2]/input"));
+        Stanowisko.sendKeys("Prezes zarządu");
+
+        Select rokRozpoczecia = new Select(driver.findElement(By.name("year")));
+        rokRozpoczecia.selectByVisibleText("2015");
+
+        Select miesiacRozpoczecia = new Select(driver.findElement(By.name("month")));
+        miesiacRozpoczecia.selectByVisibleText("Marzec");
 
 
 
