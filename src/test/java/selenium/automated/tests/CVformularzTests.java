@@ -43,6 +43,8 @@ public class CVformularzTests {
         WebElement RozpocznijButton = driver.findElement(By.xpath("//*[@id=\"app\"]/div/div[2]/div/div[2]/div[2]/a"));
         RozpocznijButton.click();
 
+        //strona pierwsza formularza
+
         WebElement firstName = driver.findElement(By.name("firstName"));
         firstName.sendKeys("Figa");
 
@@ -61,7 +63,22 @@ public class CVformularzTests {
         WebElement adres = driver.findElement(By.xpath("//*[@id=\"app\"]/div/div[1]/div[2]/div[1]/div[2]/div/div[1]/div/div/div[3]/div[3]/div/div[1]/textarea"));
         adres.sendKeys("Urocza Gdynia\nDzielnica ze sporą ilością zieleni\nChata wypasiona nr 1");
 
-        //Select zawodWybor = new Select(driver.findElement(By.className("_2lnMd")));
+        WebElement foto = driver.findElement(By.xpath("//*[@id=\"app\"]/div/div[1]/div[2]/div[1]/div[2]/div/div[1]/div/div/div[2]/div[1]/div/div[1]"));
+        foto.sendKeys("C:\\Users\\Owca\\Pictures\\FigaTheCat.jpg");
+
+        WebElement Dalej = driver.findElement(By.xpath("//*[@id=\"app\"]/div/div[1]/div[2]/div[1]/div[2]/div/div[1]/div/div/div[4]/div/button/div/span"));
+        Dalej.click();
+
+        WebElement Pomin = driver.findElement(By.xpath("/html/body/div[1]/div/div[2]/div/div/div[1]/button/div/span"));
+        Pomin.click();
+
+        //strona druga formularza
+
+
+
+
+
+        //Select zawodWybor = new Select(driver.findElement(By.className("")));
         //zawodWybor.selectByVisibleText("Prezes zarządu");
 
         }
