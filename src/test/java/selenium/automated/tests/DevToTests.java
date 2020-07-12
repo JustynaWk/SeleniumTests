@@ -10,7 +10,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
+import selenium.automated.pageObjects.DevToMainPage;
 
 
 import static org.junit.Assert.assertEquals;
@@ -68,6 +68,12 @@ public class DevToTests {
         String currentUrl = driver.getCurrentUrl(); //wyciagnij obecny link  //pobierz link do kontroli
 
         assertEquals("url isn't the same as link(href) value", linkToFirstPost, currentUrl);      //sprawdz czy link do postu jest taki sam jak obecny url
+    }
+
+    @Test
+    public void OpenDevToObject(){
+
+        DevToMainPage devToMainPage = new DevToMainPage(driver);
     }
 
 
