@@ -87,8 +87,8 @@ public class CVformularzTests {
         Select rokRozpoczecia = new Select(driver.findElement(By.name("year")));
         rokRozpoczecia.selectByVisibleText("2015");
 
-        Select miesiacRozpoczecia = new Select(driver.findElement(By.name("month")));
-        miesiacRozpoczecia.selectByVisibleText("Marzec");
+        //Select miesiacRozpoczecia = new Select(driver.findElement(By.name("month")));
+        //miesiacRozpoczecia.selectByVisibleText("Marzec");
 
         //WebElement opisStanowiska = driver.findElement(By.className("tox-tbtn__select-label"));
         //opisStanowiska.click();
