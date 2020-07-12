@@ -12,7 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class wowTest {
+public class Test2_wowPageTest {
 
     WebDriver driver;
     String tekst = "Archena";

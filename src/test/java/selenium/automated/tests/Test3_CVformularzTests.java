@@ -19,7 +19,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import java.util.concurrent.TimeUnit;
 
-public class CVformularzTests {
+public class Test3_CVformularzTests {
 
     WebDriver driver;
     String URL = "https://interviewme.pl/kreator-cv";

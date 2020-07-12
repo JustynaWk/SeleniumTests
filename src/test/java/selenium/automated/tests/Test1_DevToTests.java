@@ -18,7 +18,7 @@ import selenium.automated.pageObjects.WeekPage;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-public class DevToTests {
+public class Test1_DevToTests {
 
     WebDriver driver;                             //pusta przeglądarka
 
